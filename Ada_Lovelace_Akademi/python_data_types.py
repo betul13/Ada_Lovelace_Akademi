@@ -182,3 +182,27 @@ animals.pop("bear")
 
 for animal,knowledge in animals.items() :
     print(f"{animal} : {knowledge}")
+
+##Sets
+
+#sets are mutable
+#frozensets are immutable
+#iteration
+#membership (in, not in) #kaynak tüketimi sabittir.uzunluk önemli değildir. Kaynak yönetiminde daha iyidir.
+#len(), copy()
+
+# sets do not support :
+#indexing
+#ordering , sorting
+#slicing
+#concat +
+
+my_set = {"ada","lovelace","marry","marry"} #eleman tekrarına izin vermez. Her eleman eşsizdir.
+animal_set = set(animals)
+
+numbers = [1, 1, 1, 2, 2, 2, 3, 4, 4, 5]
+calculated_numbers = { i**2 for i in numbers}
+
+#isdisjoint sette içerip içermediğine bakmak istediğimizde kullanabiliriz.
+#issubset ve issuperset alt küme ya da kapsamaya bakmak için kullanılabilir
+#intersection,union,difference,simetrik difference
