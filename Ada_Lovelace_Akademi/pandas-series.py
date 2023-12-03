@@ -17,3 +17,5 @@ g7_pop.iloc[-1]
 g7_pop[["Canada", "France"]]
 
 g7_pop[(g7_pop > g7_pop.mean()) | (g7_pop > ((g7_pop.std())/2 + g7_pop.mean()))]
+
+g7_pop["Canada":"France"].mean()
