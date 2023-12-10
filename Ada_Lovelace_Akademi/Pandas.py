@@ -107,3 +107,4 @@ new_row = pd.Series({
 new_row
 new_row = new_row.to_frame()
 pd.concat([df, new_row.T], ignore_index=False)
+
